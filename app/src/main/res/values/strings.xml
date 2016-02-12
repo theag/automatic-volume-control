@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Automatic Volume Control</string>
+    <string name="add">Add</string>
+    <string name="add_volume_control">Add Volume Control</string>
+    <string name="edit_volume_control">Edit Volume Control</string>
+    <string name="to">to</string>
+    <string name="name">Name</string>
+    <string name="starts_on">Starts on</string>
+    <string name="repeat">Repeat</string>
+    <string name="sunday_one">S</string>
+    <string name="monday_one">M</string>
+    <string name="tuesday_one">T</string>
+    <string name="wednesday_one">W</string>
+    <string name="thursday_one">T</string>
+    <string name="friday_one">F</string>
+    <string name="saturday_one">S</string>
+    <string name="ends_on">Ends on</string>
+    <string name="set_volume_to">Set volume to</string>
+    <string name="save">Save</string>
+    <string name="vibrate">Vibrate</string>
+</resources>

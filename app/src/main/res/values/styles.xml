@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:buttonStyle">@style/AppTheme.MyButton</item>
+        <item name="android:imageButtonStyle">@style/AppTheme.MyImageButton</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.MyButton" parent="android:Widget.Button">
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="AppTheme.MyImageButton" parent="android:Widget.ImageButton">
+        <item name="android:background">@null</item>
+    </style>
+
+</resources>

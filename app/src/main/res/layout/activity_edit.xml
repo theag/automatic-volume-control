@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".EditActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="?attr/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/button_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_clear_24dp"
+            android:onClick="buttonPress"/>
+
+        <Space android:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:textAllCaps="true"
+            android:onClick="buttonPress"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:id="@+id/text_name"
+            android:inputType="textCapWords"
+            android:hint="@string/name"/>
+
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_start_date"
+            android:text="Sun, Feb 14, 2016"
+            android:onClick="buttonPress"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/switch_enabled"
+            android:checked="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_start_date"
+            android:id="@+id/button_start_time"
+            android:text="12:00 AM"
+            android:onClick="buttonPress"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_start_time"
+            android:layout_toRightOf="@+id/button_start_time"
+            android:textColor="@android:color/black"
+            android:id="@+id/text_to"
+            android:text="@string/to"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_start_date"
+            android:layout_toRightOf="@+id/text_to"
+            android:id="@+id/button_end_time"
+            android:text="12:00 PM"
+            android:onClick="buttonPress"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_start_time"
+            android:text="@string/repeat"
+            android:id="@+id/checkbox_repeat"
+            android:checked="true"
+            android:onClick="buttonPress"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkbox_repeat"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:id="@+id/layout_repeatStuff_1">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <com.automaticvolumecontrol.HighlightButton
+                android:id="@+id/button_sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sunday_one"
+                android:onClick="buttonPress"
+                app:highlighted="true"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+            <com.automaticvolumecontrol.HighlightButton
+                android:id="@+id/button_monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/monday_one"
+                android:onClick="buttonPress"
+                app:highlighted="true"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+            <com.automaticvolumecontrol.HighlightButton
+                android:id="@+id/button_tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tuesday_one"
+                android:onClick="buttonPress"
+                app:highlighted="true"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+            <com.automaticvolumecontrol.HighlightButton
+                android:id="@+id/button_wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wednesday_one"
+                android:onClick="buttonPress"
+                app:highlighted="true"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+            <com.automaticvolumecontrol.HighlightButton
+                android:id="@+id/button_thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thursday_one"
+                android:onClick="buttonPress"
+                app:highlighted="true"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+            <com.automaticvolumecontrol.HighlightButton
+                android:id="@+id/button_friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/friday_one"
+                android:onClick="buttonPress"
+                app:highlighted="true"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+            <com.automaticvolumecontrol.HighlightButton
+                android:id="@+id/button_saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/saturday_one"
+                android:onClick="buttonPress"
+                app:highlighted="true"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_repeatStuff_1"
+            android:orientation="horizontal"
+            android:id="@+id/layout_repeatStuff_2">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkbox_ends_on"
+                android:text="@string/ends_on"
+                android:onClick="buttonPress"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_end_date"
+                android:text="Mon, Feb 29, 2016"
+                android:enabled="false"
+                android:onClick="buttonPress"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_repeatStuff_2"
+            android:id="@+id/text_set_volume_to"
+            android:textColor="@android:color/black"
+            android:text="@string/set_volume_to"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_set_volume_to"
+            android:id="@+id/seekBar"
+            android:progress="0"
+            android:max="10"
+            android:longClickable="false" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
